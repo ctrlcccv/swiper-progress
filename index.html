@@ -105,7 +105,7 @@ ul, li {list-style: none;}
 					el: '.slider .slide_tit',
 					clickable: 'true',
 					type: 'bullets',
-					renderBullet: function (index, className) {
+					renderBullet: (index, className) => {
 						return `<li class=${className}><span class="bar"></span><span class="txt">${listArray[index]}</span></li>`;
 					},
 				},
